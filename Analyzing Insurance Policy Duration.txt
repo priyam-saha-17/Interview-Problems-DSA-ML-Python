@@ -1,0 +1,54 @@
+Analyzing Insurance Policy Duration
+________________________________________
+
+
+
+You are given a sheet where the starting date of an Insurance policy is given, and also the current date is given. In order to fine-grain the policyholder information.
+Your task is to fill in:
+
+Count Completed Years
+Count Completed Months
+Count Completed Days
+
+
+
+
+Tasks
+1. Fill the cells C3:C19 by using the formula DATEDIF
+2. Fill the cells D3:D19 by using the formula DATEDIF
+3. Fill the cells E3:E19 by using the formula DATEDIF
+
+
+csv:
+____
+
+
+Starting Date of the Policy Current Date Count Completed Years Count Completed Months Count Completed Days
+y m d
+01-01-2015 24-04-2023 8 99 3035
+01-01-2017 24-04-2023 6 75 2304
+01-01-2022 24-04-2023 1 15 478
+01-01-2016 24-04-2023 7 87 2670
+01-01-2020 24-04-2023 3 39 1209
+01-01-2019 24-04-2023 4 51 1574
+01-01-2019 24-04-2023 4 51 1574
+01-01-2023 24-04-2023 0 3 113
+01-01-2022 24-04-2023 1 15 478
+01-01-2015 24-04-2023 8 99 3035
+01-01-2017 24-04-2023 6 75 2304
+01-01-2022 24-04-2023 1 15 478
+01-01-2016 24-04-2023 7 87 2670
+01-01-2020 24-04-2023 3 39 1209
+01-01-2019 24-04-2023 4 51 1574
+01-01-2019 24-04-2023 4 51 1574
+01-01-2023 24-04-2023 0 3 113
+
+
+
+
+Functions:
+___________
+1. =DATEDIF(A3,B3,"Y")
+2. =DATEDIF(A3, B3, "M")
+3. =DATEDIF(A3, B3, "D")
+
