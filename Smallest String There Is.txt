@@ -1,0 +1,63 @@
+Smallest String There Is
+__________________________
+
+Given a positive integer N, construct a string of length N such that no two adjacent characters are the same. Among all possible strings, find the lexicographically minimum string. Note: You can use only lowercase characters from 'a' to 'z'.
+
+Input
+
+The first and only line of input contains an integer N.
+
+Constraints:
+
+1 <= N <= 105
+
+Output
+
+Print the required string.
+
+__________________________
+
+
+Example
+
+Sample Input 1:
+
+1
+
+Sample Output 1:
+
+a
+
+Sample Input 2:
+
+2
+
+Sample Output 2:
+
+ab
+
+_________________________________________________________________________
+
+Code:
+______
+
+
+
+# Your code here
+
+n= int(input())
+
+count = 0
+
+for i in range(1, n+1):
+
+    print(chr((count%2)+97), end="")
+
+    count += 1
+
+    
+
+
+
+
+
