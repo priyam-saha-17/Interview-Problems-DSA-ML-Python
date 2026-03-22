@@ -1,0 +1,181 @@
+Extracting Shipping Year with suitable Text Function
+_________________________________________________________
+
+
+Efficiently Extract Shipping Year from the Ship Date Column Using a Text Function to Enhance Data Analysis Capabilities, Aiding in Yearly Performance Assessment and Planning.
+
+Tasks
+1. Use the appropriate string function to extract the shipping year and Fill in the column named Shipping year in cells D3:D151
+
+
+
+_________________________________________________________
+
+
+Functions:
+___________
+1. =YEAR(C3)
+
+
+
+
+csv:
+____
+
+
+Sales Channel Comission 5% Tax 10% Order Prioriy Threshold $250.00
+Order ID Order Date Ship Date Shipping Year Aging Ship Mode Product Category Product Sales Quantity Unit Price Discount Profit Commission Shipping Cost Tax Net Profit Order Priority Customer ID Customer Name Segment City State Country Region Months
+OR0001 09-11-2015 17-11-2015 2015 8 First Class Auto & Accessories Car Media Players $140.00 2 $70.00 0.05 $46.00 $2.30 $4.60 $4.60 $34.50 Low LS-001 Lane Daniels Consumer Brisbane Queensland Australia Oceania Nov
+OR0002 30-06-2015 02-07-2015 2015 2 First Class Auto & Accessories Car Speakers $211.00 3 $70.33 0.03 $112.00 $5.60 $11.20 $11.20 $84.00 Low IZ-002 Alvarado Kriz Home Office Berlin Berlin Germany Central Jun
+OR0003 05-12-2015 13-12-2015 2015 8 First Class Auto & Accessories Car Body Covers $117.00 5 $23.40 0.01 $31.20 $1.56 $3.10 $3.12 $23.42 High EN-003 Moon Weien Consumer Porirua Wellington New Zealand Oceania Dec
+OR0004 09-05-2015 16-05-2015 2015 7 First Class Auto & Accessories Car & Bike Care $118.00 2 $59.00 0.05 $26.20 $1.31 $2.60 $2.62 $19.67 High AN-004 Sanchez Bergman Corporate Kabul Kabul Afghanistan Central Asia May
+OR0005 09-07-2015 18-07-2015 2015 9 First Class Auto & Accessories Tyre $250.00 1 $250.00 0.04 $160.00 $8.00 $16.00 $16.00 $120.00 High ON-005 Rowe Jackson Corporate Townsville Queensland Australia Oceania Jul
+OR0006 25-02-2015 05-03-2015 2015 8 First Class Auto & Accessories Bike Tyres $72.00 3 $24.00 0.04 $24.00 $1.20 $2.40 $2.40 $18.00 Low TO-006 Carter Barreto Corporate Bytom Silesia Poland EMEA Feb
+OR0007 09-04-2015 10-04-2015 2015 1 First Class Auto & Accessories Car Mat $54.00 1 $54.00 0.05 $54.00 $2.70 $5.40 $5.40 $40.50 High OM-007 Mcconnell Tom Consumer Chicago Illinois United States Central Apr
+OR0008 30-03-2015 06-04-2015 2015 7 First Class Auto & Accessories Car Seat Covers $114.00 5 $22.80 0.02 $22.60 $1.13 $2.30 $2.26 $16.91 Low AN-008 Dennis Holloman Corporate Suzhou Anhui China North Asia Mar
+OR0009 09-02-2015 16-02-2015 2015 7 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 5 $46.20 0.03 $116.40 $5.82 $11.60 $11.64 $87.34 Low EN-009 Wall Olsen Consumer Juárez Chihuahua Mexico North Feb
+OR0010 21-04-2015 01-05-2015 2015 10 First Class Auto & Accessories Car Media Players $140.00 2 $70.00 0.02 $54.40 $2.72 $5.40 $5.44 $40.84 High TT-0010 Shepard Witt Consumer Soyapango San Salvador El Salvador Central Apr
+OR0011 16-11-2015 26-11-2015 2015 10 First Class Auto & Accessories Car Speakers $211.00 4 $52.75 0.01 $122.60 $6.13 $12.30 $12.26 $91.91 Low ED-0011 Johns Reed Corporate Taipei Taipei City Taiwan North Asia Nov
+OR0012 01-09-2015 02-09-2015 2015 1 First Class Auto & Accessories Car Body Covers $117.00 4 $29.25 0.04 $18.30 $0.92 $1.80 $1.83 $13.76 High ON-0012 Doyle Knutson Home Office Los Angeles California United States West Sep
+OR0013 09-07-2015 16-07-2015 2015 7 First Class Auto & Accessories Car & Bike Care $118.00 1 $118.00 0.02 $35.60 $1.78 $3.60 $3.56 $26.66 High WN-0013 Butler Brown Corporate Saint-Brieuc Brittany France Central Jul
+OR0014 22-07-2015 27-07-2015 2015 5 First Class Auto & Accessories Tyre $250.00 3 $83.33 0.04 $140.00 $7.00 $14.00 $14.00 $105.00 Low AN-0014 Johnson Abelman Corporate Kamina Katanga Democratic Republic of the Congo Africa Jul
+OR0015 12-10-2015 21-10-2015 2015 9 First Class Auto & Accessories Bike Tyres $72.00 4 $18.00 0.01 $18.00 $0.90 $1.80 $1.80 $13.50 Low EY-0015 Greene Decherney Consumer Brisbane Queensland Australia Oceania Oct
+OR0016 23-02-2015 05-03-2015 2015 10 First Class Auto & Accessories Car Mat $54.00 2 $27.00 0.01 $27.00 $1.35 $2.70 $2.70 $20.25 Low RN-0016 Bentley Zypern Consumer Berlin Berlin Germany Central Feb
+OR0017 04-05-2015 08-05-2015 2015 4 First Class Auto & Accessories Car Seat Covers $114.00 2 $57.00 0.05 $22.60 $1.13 $2.30 $2.26 $16.91 Low CK-0017 Rivera Black Consumer Shouguang Shandong China North Asia May
+OR0018 12-06-2015 19-06-2015 2015 7 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 5 $46.20 0.05 $93.30 $4.67 $9.30 $9.33 $70.01 Low RE-0018 Wong Macintyre Consumer New York City New York United States East Jun
+OR0019 13-05-2015 20-05-2015 2015 7 First Class Auto & Accessories Car Media Players $140.00 2 $70.00 0.05 $46.00 $2.30 $4.60 $4.60 $34.50 High ON-0019 Hendricks Wilson Consumer Behshahr Mazandaran Iran EMEA May
+OR0020 27-07-2015 02-08-2015 2015 6 First Class Auto & Accessories Car Speakers $211.00 2 $105.50 0.02 $122.60 $6.13 $12.30 $12.26 $91.91 Low ED-0020 Johns Reed Corporate Taipei Taipei City Taiwan North Asia Jul
+OR0021 09-12-2015 13-12-2015 2015 4 First Class Auto & Accessories Car Body Covers $117.00 5 $23.40 0.01 $31.20 $1.56 $3.10 $3.12 $23.42 High AM-0021 Barr Sundaresam Consumer Bhopal Madhya Pradesh India Central Asia Dec
+OR0022 09-02-2015 16-02-2015 2015 7 First Class Auto & Accessories Car & Bike Care $118.00 2 $59.00 0.03 $30.90 $1.55 $3.10 $3.09 $23.17 Low KE-0022 Holt Glocke Corporate Seattle Washington United States West Feb
+OR0023 20-07-2015 26-07-2015 2015 6 First Class Auto & Accessories Tyre $250.00 4 $62.50 0.02 $150.00 $7.50 $15.00 $15.00 $112.50 High LL-0023 Gaines O'Carroll Consumer Geraldton Western Australia Australia Oceania Jul
+OR0024 22-11-2015 24-11-2015 2015 2 First Class Auto & Accessories Bike Tyres $72.00 4 $18.00 0.02 $18.00 $0.90 $1.80 $1.80 $13.50 Low CO-0024 Copeland Lomonaco Corporate Celle Lower Saxony Germany Central Nov
+OR0025 22-02-2015 02-03-2015 2015 8 First Class Auto & Accessories Car Mat $54.00 1 $54.00 0.05 $54.00 $2.70 $5.40 $5.40 $40.50 High NA-0025 Vasquez Dona Consumer Seville Andalusía Spain South Feb
+OR0026 06-04-2015 10-04-2015 2015 4 First Class Auto & Accessories Car Seat Covers $114.00 4 $28.50 0.02 $24.90 $1.25 $2.50 $2.49 $18.67 Low LL-0026 Freeman Castell Corporate Raipur Uttarakhand India Central Asia Apr
+OR0027 27-07-2015 04-08-2015 2015 8 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 1 $231.00 0.03 $144.10 $7.21 $14.40 $14.41 $108.09 High LE-0027 Reid Engle Home Office Kharkiv Kharkiv Ukraine EMEA Jul
+OR0028 29-09-2015 05-10-2015 2015 6 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.03 $55.80 $2.79 $5.60 $5.58 $41.83 Low NG-0028 Harris Armstrong Corporate Jinan Shandong China North Asia Sep
+OR0029 11-04-2015 18-04-2015 2015 7 First Class Auto & Accessories Car Speakers $211.00 3 $70.33 0.03 $112.00 $5.60 $11.20 $11.20 $84.00 High ED-0029 Everett Sweed Consumer Chinandega Chinandega Nicaragua Central Apr
+OR0030 23-01-2015 27-01-2015 2015 4 First Class Auto & Accessories Car Body Covers $117.00 1 $117.00 0.02 $34.70 $1.74 $3.50 $3.47 $26.00 Low AS-0030 Poole Lucas Corporate Palembang Sumatera Selatan Indonesia Southeast Asia Jan
+OR0031 31-03-2015 09-04-2015 2015 9 First Class Auto & Accessories Car & Bike Care $118.00 3 $39.33 0.03 $27.40 $1.37 $2.70 $2.74 $20.59 Low WN-0031 Gonzales Brown Consumer Duisburg North Rhine-Westphalia Germany Central Mar
+OR0032 24-11-2015 29-11-2015 2015 5 First Class Auto & Accessories Tyre $250.00 1 $250.00 0.02 $165.00 $8.25 $16.50 $16.50 $123.75 Low AN-0032 Perry Brennan Consumer Tongi Dhaka Bangladesh Central Asia Nov
+OR0033 24-08-2015 03-09-2015 2015 10 First Class Auto & Accessories Bike Tyres $72.00 4 $18.00 0.05 $18.00 $0.90 $1.80 $1.80 $13.50 High KI-0033 Garner Hirasaki Consumer Suzhou Anhui China North Asia Aug
+OR0034 04-05-2015 09-05-2015 2015 5 First Class Auto & Accessories Car Mat $54.00 4 $13.50 0.05 $13.50 $0.68 $1.40 $1.35 $10.08 High EE-0034 Norton Magee Corporate Henderson Nevada United States West May
+OR0035 15-07-2015 16-07-2015 2015 1 First Class Auto & Accessories Car Seat Covers $114.00 4 $28.50 0.01 $29.40 $1.47 $2.90 $2.94 $22.09 Low ON-0035 Bean Thompson Corporate Manila National Capital Philippines Southeast Asia Jul
+OR0036 03-10-2015 07-10-2015 2015 4 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 2 $115.50 0.05 $127.90 $6.40 $12.80 $12.79 $95.92 High SH-0036 Bond Overcash Consumer Graz Styria Austria Central Oct
+OR0037 28-06-2015 04-07-2015 2015 6 First Class Auto & Accessories Car Media Players $140.00 5 $28.00 0.04 $32.00 $1.60 $3.20 $3.20 $24.00 Low KE-0037 Holt Glocke Corporate Puebla Puebla Mexico North Jun
+OR0038 01-08-2015 04-08-2015 2015 3 First Class Auto & Accessories Car Speakers $211.00 4 $52.75 0.01 $122.60 $6.13 $12.30 $12.26 $91.91 Low YD-0038 Moran Lloyd Consumer Augsburg Bavaria Germany Central Aug
+OR0039 07-06-2015 09-06-2015 2015 2 First Class Auto & Accessories Car Body Covers $117.00 1 $117.00 0.04 $32.30 $1.62 $3.20 $3.23 $24.26 Low MS-0039 Jones Adams Home Office Medellín Antioquia Colombia South Jun
+OR0040 16-08-2015 22-08-2015 2015 6 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.04 $14.40 $0.72 $1.40 $1.44 $10.84 High RE-0040 Wong Macintyre Consumer Sydney New South Wales Australia Oceania Aug
+OR0041 09-07-2015 13-07-2015 2015 4 First Class Auto & Accessories Tyre $250.00 5 $50.00 0.03 $132.50 $6.63 $13.30 $13.25 $99.33 Low ER-0041 Strong Schoenberger Corporate Los Angeles California United States West Jul
+OR0042 25-02-2015 05-03-2015 2015 8 First Class Auto & Accessories Bike Tyres $72.00 5 $14.40 0.02 $14.40 $0.72 $1.40 $1.44 $10.84 Low IN-0042 Terrell Zeldin Consumer Zigong Sichuan China North Asia Feb
+OR0043 26-10-2015 27-10-2015 2015 1 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.01 $10.80 $0.54 $1.10 $1.08 $8.08 Low EN-0043 Reyes Christensen Consumer Adelaide South Australia Australia Oceania Oct
+OR0044 22-12-2015 27-12-2015 2015 5 First Class Auto & Accessories Car Seat Covers $114.00 4 $28.50 0.04 $15.80 $0.79 $1.60 $1.58 $11.83 Low DI-0044 Dean Etezadi Consumer Kuantan Pahang Malaysia Southeast Asia Dec
+OR0045 24-04-2015 01-05-2015 2015 7 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 4 $57.75 0.04 $114.00 $5.70 $11.40 $11.40 $85.50 Low TT-0045 Hess Prescott Home Office Harrisonburg Virginia United States South Apr
+OR0046 20-09-2015 28-09-2015 2015 8 First Class Auto & Accessories Car Media Players $140.00 2 $70.00 0.05 $46.00 $2.30 $4.60 $4.60 $34.50 High ER-0046 Russo Webber Consumer Everett Massachusetts United States East Sep
+OR0047 12-03-2015 18-03-2015 2015 6 First Class Auto & Accessories Car Speakers $211.00 1 $211.00 0.01 $128.90 $6.45 $12.90 $12.89 $96.67 Low CH-0047 Kerr Toch Corporate Vadodara Gujarat India Central Asia Mar
+OR0048 30-03-2015 31-03-2015 2015 1 First Class Auto & Accessories Car Body Covers $117.00 4 $29.25 0.05 $13.60 $0.68 $1.40 $1.36 $10.16 High CK-0048 Anthony Myrick Consumer Sanya Hainan China North Asia Mar
+OR0049 23-07-2015 29-07-2015 2015 6 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.04 $14.40 $0.72 $1.40 $1.44 $10.84 Low TT-0049 Fuller Eplett Corporate San Diego California United States West Jul
+OR0050 25-01-2015 30-01-2015 2015 5 First Class Auto & Accessories Tyre $250.00 2 $125.00 0.01 $165.00 $8.25 $16.50 $16.50 $123.75 Low RS-0050 Hernandez Badders Home Office Guaymas Sonora Mexico North Jan
+OR0051 05-06-2015 08-06-2015 2015 3 First Class Auto & Accessories Bike Tyres $72.00 2 $36.00 0.01 $36.00 $1.80 $3.60 $3.60 $27.00 Low AN-0051 Smith Abelman Consumer Wuhan Hubei China North Asia Jun
+OR0052 27-11-2015 03-12-2015 2015 6 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.03 $10.80 $0.54 $1.10 $1.08 $8.08 Low LE-0052 Mcdowell Roelle Consumer Madison Wisconsin United States Central Nov
+OR0053 19-06-2015 23-06-2015 2015 4 First Class Auto & Accessories Car Seat Covers $114.00 4 $28.50 0.05 $11.20 $0.56 $1.10 $1.12 $8.42 Low IS-0053 Humphrey Preis Home Office Salto São Paulo Brazil South Jun
+OR0054 14-10-2015 16-10-2015 2015 2 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 2 $115.50 0.04 $132.50 $6.63 $13.30 $13.25 $99.33 Low LY-0054 Winters Shonely Consumer Hargeysa Woqooyi Galbeed Somalia Africa Oct
+OR0055 01-07-2015 07-07-2015 2015 6 First Class Auto & Accessories Car Media Players $140.00 2 $70.00 0.03 $51.60 $2.58 $5.20 $5.16 $38.66 Low NT-0055 Heath O'Briant Home Office Perth Western Australia Australia Oceania Jul
+OR0056 11-08-2015 16-08-2015 2015 5 First Class Auto & Accessories Car Speakers $211.00 1 $211.00 0.01 $128.90 $6.45 $12.90 $12.89 $96.67 Low IE-0056 Clayton Marie Consumer Anshan Liaoning China North Asia Aug
+OR0057 01-09-2015 09-09-2015 2015 8 First Class Auto & Accessories Car Body Covers $117.00 4 $29.25 0.02 $27.60 $1.38 $2.80 $2.76 $20.66 Low SS-0057 Steele Gross Consumer Amsterdam North Holland Netherlands Central Sep
+OR0058 16-02-2015 21-02-2015 2015 5 First Class Auto & Accessories Car & Bike Care $118.00 3 $39.33 0.05 $20.30 $1.02 $2.00 $2.03 $15.26 High ON-0058 Trujillo Sheldon Consumer Le Petit-Quevilly Upper Normandy France Central Feb
+OR0059 06-01-2015 12-01-2015 2015 6 First Class Auto & Accessories Tyre $250.00 1 $250.00 0.04 $160.00 $8.00 $16.00 $16.00 $120.00 Low EN-0059 Kelly Braden Corporate Detroit Michigan United States Central Jan
+OR0060 04-09-2016 07-09-2016 2016 3 First Class Auto & Accessories Bike Tyres $72.00 2 $36.00 0.03 $36.00 $1.80 $3.60 $3.60 $27.00 Low ON-0060 Yates Johnson Consumer Hamburg Hamburg Germany Central Sep
+OR0061 27-12-2015 05-01-2016 2016 9 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.01 $10.80 $0.54 $1.10 $1.08 $8.08 Low KS-0061 Flores Brooks Home Office Morelia Michoacán Mexico North Dec
+OR0062 27-03-2015 05-04-2015 2015 9 First Class Auto & Accessories Car Seat Covers $114.00 3 $38.00 0.01 $30.60 $1.53 $3.10 $3.06 $22.91 High ON-0062 Sellers Stevenson Consumer Changchun Jilin China North Asia Mar
+OR0063 27-08-2015 04-09-2015 2015 8 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 5 $46.20 0.02 $127.90 $6.40 $12.80 $12.79 $95.92 High EY-0063 Carpenter Decherney Corporate Madrid Madrid Spain South Aug
+OR0064 24-08-2015 26-08-2015 2015 2 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.05 $53.00 $2.65 $5.30 $5.30 $39.75 Low ED-0064 Johns Reed Corporate Taipei Taipei City Taiwan North Asia Aug
+OR0065 09-04-2015 13-04-2015 2015 4 First Class Auto & Accessories Car Speakers $211.00 2 $105.50 0.05 $109.90 $5.50 $11.00 $10.99 $82.42 Low RE-0065 Knox Sayre Consumer Newcastle New South Wales Australia Oceania Apr
+OR0066 20-08-2015 22-08-2015 2015 2 First Class Auto & Accessories Car Body Covers $117.00 1 $117.00 0.02 $34.70 $1.74 $3.50 $3.47 $26.00 Low LL-0066 Leblanc Spruell Consumer Surakarta Jawa Tengah Indonesia Southeast Asia Aug
+OR0067 08-02-2015 11-02-2015 2015 3 First Class Auto & Accessories Car & Bike Care $118.00 1 $118.00 0.01 $36.80 $1.84 $3.70 $3.68 $27.58 High SS-0067 Berg Weiss Home Office New York City New York United States East Feb
+OR0068 26-11-2016 27-11-2016 2016 1 First Class Auto & Accessories Tyre $250.00 1 $250.00 0.01 $167.50 $8.38 $16.80 $16.75 $125.58 High EN-0068 Kelly Braden Corporate Beijing Beijing China North Asia Nov
+OR0069 19-05-2015 21-05-2015 2015 2 First Class Auto & Accessories Bike Tyres $72.00 1 $72.00 0.02 $72.00 $3.60 $7.20 $7.20 $54.00 Low LO-0069 Sanford Zydlo Corporate London England United Kingdom North May
+OR0070 23-07-2015 27-07-2015 2015 4 First Class Auto & Accessories Car Mat $54.00 1 $54.00 0.03 $54.00 $2.70 $5.40 $5.40 $40.50 High ER-0070 Russo Webber Consumer Talence Aquitaine France Central Jul
+OR0071 06-03-2015 08-03-2015 2015 2 First Class Auto & Accessories Car Seat Covers $114.00 4 $28.50 0.03 $20.30 $1.02 $2.00 $2.03 $15.26 High NT-0071 Ferguson Conant Corporate Aurangabad Bihar India Central Asia Mar
+OR0072 20-09-2015 23-09-2015 2015 3 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 3 $77.00 0.05 $116.40 $5.82 $11.60 $11.64 $87.34 Low ON-0072 Santiago Grayson Corporate Los Angeles California United States West Sep
+OR0073 07-10-2015 13-10-2015 2015 6 First Class Auto & Accessories Car Media Players $140.00 4 $35.00 0.05 $32.00 $1.60 $3.20 $3.20 $24.00 Low RT-0073 Foley Stewart Consumer Marikina National Capital Philippines Southeast Asia Oct
+OR0074 30-05-2015 31-05-2015 2015 1 First Class Auto & Accessories Car Speakers $211.00 5 $42.20 0.01 $120.50 $6.03 $12.00 $12.05 $90.43 Low EP-0074 Dorsey Prichep Home Office Johannesburg Gauteng South Africa Africa May
+OR0075 19-12-2015 23-12-2015 2015 4 First Class Auto & Accessories Car Body Covers $117.00 4 $29.25 0.01 $32.30 $1.62 $3.20 $3.23 $24.26 High AN-0075 Miranda Ryan Home Office Providence Rhode Island United States East Dec
+OR0076 03-12-2015 05-12-2015 2015 2 First Class Auto & Accessories Car & Bike Care $118.00 1 $118.00 0.01 $36.80 $1.84 $3.70 $3.68 $27.58 Low CH-0076 Parsons Leinenbach Corporate Qingdao Shandong China North Asia Dec
+OR0077 28-04-2015 07-05-2015 2015 9 First Class Auto & Accessories Tyre $250.00 4 $62.50 0.03 $140.00 $7.00 $14.00 $14.00 $105.00 High NN-0077 Bruce Nunn Home Office Kozhikode Kerala India Central Asia Apr
+OR0078 12-12-2015 22-12-2015 2015 10 First Class Auto & Accessories Bike Tyres $72.00 4 $18.00 0.04 $18.00 $0.90 $1.80 $1.80 $13.50 Low ON-0078 Sherman Knutson Corporate Adelaide South Australia Australia Oceania Dec
+OR0079 19-09-2015 23-09-2015 2015 4 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.03 $10.80 $0.54 $1.10 $1.08 $8.08 Low LL-0079 Gibson Carroll Consumer Kuala Lumpur Kuala Lumpur Malaysia Southeast Asia Sep
+OR0080 25-06-2018 03-07-2018 2018 8 First Class Auto & Accessories Car Seat Covers $114.00 1 $114.00 0.05 $28.30 $1.42 $2.80 $2.83 $21.26 Low NS-0080 Perkins Cousins Consumer Columbus Ohio United States East Jun
+OR0081 19-01-2015 27-01-2015 2015 8 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 1 $231.00 0.03 $144.10 $7.21 $14.40 $14.41 $108.09 High NA-0081 Vasquez Dona Consumer Xiangtan Hunan China North Asia Jan
+OR0082 17-06-2015 25-06-2015 2015 8 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.01 $58.60 $2.93 $5.90 $5.86 $43.91 Low SH-0082 Mann Hirsh Corporate Marikina National Capital Philippines Southeast Asia Jun
+OR0083 11-04-2015 21-04-2015 2015 10 First Class Auto & Accessories Car Speakers $211.00 5 $42.20 0.03 $99.40 $4.97 $9.90 $9.94 $74.59 Low ER-0083 Golden Ritter Consumer Dijon Burgundy France Central Apr
+OR0084 03-06-2015 04-06-2015 2015 1 First Class Auto & Accessories Car Body Covers $117.00 3 $39.00 0.02 $30.00 $1.50 $3.00 $3.00 $22.50 Low ON-0084 Walton Jackson Consumer Cairo Al Qahirah Egypt Africa Jun
+OR0085 23-05-2015 24-05-2015 2015 1 First Class Auto & Accessories Car & Bike Care $118.00 2 $59.00 0.04 $28.60 $1.43 $2.90 $2.86 $21.41 Low NI-0085 Blanchard Vittorini Consumer Detroit Michigan United States Central May
+OR0086 29-06-2015 02-07-2015 2015 3 First Class Auto & Accessories Tyre $250.00 4 $62.50 0.05 $120.00 $6.00 $12.00 $12.00 $90.00 Low LE-0086 Tucker Caudle Consumer New York City New York United States East Jun
+OR0087 28-03-2015 04-04-2015 2015 7 First Class Auto & Accessories Bike Tyres $72.00 2 $36.00 0.02 $36.00 $1.80 $3.60 $3.60 $27.00 Low EN-0087 Hodge Moren Consumer Burnley England United Kingdom North Mar
+OR0088 12-05-2015 19-05-2015 2015 7 First Class Auto & Accessories Car Mat $54.00 2 $27.00 0.03 $27.00 $1.35 $2.70 $2.70 $20.25 Low EN-0088 Duncan Dahlen Home Office Laval Pays de la Loire France Central May
+OR0089 24-03-2015 25-03-2015 2015 1 First Class Auto & Accessories Car Seat Covers $114.00 2 $57.00 0.04 $24.90 $1.25 $2.50 $2.49 $18.67 Low ER-0089 Estrada Kiefer Consumer Buenos Aires Buenos Aires Argentina South Mar
+OR0090 28-12-2015 01-01-2016 2016 4 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 5 $46.20 0.04 $104.80 $5.24 $10.50 $10.48 $78.58 High EN-0090 Miller Allen Consumer Kochi Kerala India Central Asia Dec
+OR0091 01-06-2015 03-06-2015 2015 2 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.04 $54.40 $2.72 $5.40 $5.44 $40.84 High IS-0091 Riley Davis Corporate Maseru Maseru Lesotho Africa Jun
+OR0092 07-09-2015 12-09-2015 2015 5 First Class Auto & Accessories Car Speakers $211.00 3 $70.33 0.01 $124.70 $6.24 $12.50 $12.47 $93.50 Low LL-0092 Mcclain O'Donnell Corporate Matagalpa Matagalpa Nicaragua Central Sep
+OR0093 25-11-2015 05-12-2015 2015 10 First Class Auto & Accessories Car Body Covers $117.00 2 $58.50 0.02 $32.30 $1.62 $3.20 $3.23 $24.26 High EN-0093 Gardner Craven Consumer Managua Managua Nicaragua Central Nov
+OR0094 04-07-2015 06-07-2015 2015 2 First Class Auto & Accessories Car & Bike Care $118.00 4 $29.50 0.04 $19.10 $0.96 $1.90 $1.91 $14.34 Low DE-0094 Fletcher Gnade Corporate Strasbourg Alsace France Central Jul
+OR0095 31-07-2015 08-08-2015 2015 8 First Class Auto & Accessories Tyre $250.00 4 $62.50 0.03 $140.00 $7.00 $14.00 $14.00 $105.00 Low ER-0095 Elliott Deggeller Consumer Surabaya Jawa Timur Indonesia Southeast Asia Jul
+OR0096 10-04-2015 15-04-2015 2015 5 First Class Auto & Accessories Bike Tyres $72.00 2 $36.00 0.01 $36.00 $1.80 $3.60 $3.60 $27.00 Low ON-0096 Stokes Knudson Consumer Tupã São Paulo Brazil South Apr
+OR0097 24-01-2015 31-01-2015 2015 7 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.02 $10.80 $0.54 $1.10 $1.08 $8.08 Low ON-0097 Hatfield Trafton Consumer Vienna Vienna Austria Central Jan
+OR0098 05-03-2015 13-03-2015 2015 8 First Class Auto & Accessories Car Seat Covers $114.00 3 $38.00 0.04 $20.30 $1.02 $2.00 $2.03 $15.26 Low ND-0098 Henry Chand Consumer Hirakata Osaka Japan North Asia Mar
+OR0099 15-02-2015 20-02-2015 2015 5 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 2 $115.50 0.02 $141.80 $7.09 $14.20 $14.18 $106.33 Low ND-0099 York Redmond Home Office Granollers Catalonia Spain South Feb
+OR0100 06-08-2015 08-08-2015 2015 2 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.01 $58.60 $2.93 $5.90 $5.86 $43.91 Low CK-00100 Rivera Black Consumer Jakarta Jakarta Indonesia Southeast Asia Aug
+OR0101 17-04-2015 23-04-2015 2015 6 First Class Auto & Accessories Car Speakers $211.00 5 $42.20 0.03 $99.40 $4.97 $9.90 $9.94 $74.59 Low RN-00101 Cook Bern Consumer Amsterdam North Holland Netherlands Central Apr
+OR0102 24-02-2015 26-02-2015 2015 2 First Class Auto & Accessories Car Body Covers $117.00 3 $39.00 0.03 $26.50 $1.33 $2.60 $2.65 $19.93 Low LL-00102 Marshall Carroll Consumer Milpa Alta Distrito Federal Mexico North Feb
+OR0103 22-07-2015 26-07-2015 2015 4 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.04 $14.40 $0.72 $1.40 $1.44 $10.84 High SE-00103 Blankenship Reese Consumer Los Angeles California United States West Jul
+OR0104 06-04-2015 16-04-2015 2015 10 First Class Auto & Accessories Tyre $250.00 3 $83.33 0.05 $132.50 $6.63 $13.30 $13.25 $99.33 Low LO-00104 Sanford Zydlo Corporate San Francisco California United States West Apr
+OR0105 08-03-2015 14-03-2015 2015 6 First Class Auto & Accessories Bike Tyres $72.00 4 $18.00 0.03 $18.00 $0.90 $1.80 $1.80 $13.50 Low EN-00105 Sexton Sorensen Consumer Izmir Izmir Turkey EMEA Mar
+OR0106 22-09-2015 23-09-2015 2015 1 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.01 $10.80 $0.54 $1.10 $1.08 $8.08 Low ER-00106 Coleman Bremer Consumer Yaounde Centre Cameroon Africa Sep
+OR0107 01-11-2015 02-11-2015 2015 1 First Class Auto & Accessories Car Seat Covers $114.00 2 $57.00 0.02 $29.40 $1.47 $2.90 $2.94 $22.09 Low TZ-00107 Maxwell Katz Consumer Santander Cantabria Spain South Nov
+OR0108 05-07-2015 12-07-2015 2015 7 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 3 $77.00 0.02 $137.10 $6.86 $13.70 $13.71 $102.84 Low IN-00108 Love Grinstein Consumer Cangzhou Hebei China North Asia Jul
+OR0109 25-04-2015 01-05-2015 2015 6 First Class Auto & Accessories Car Media Players $140.00 4 $35.00 0.03 $43.20 $2.16 $4.30 $4.32 $32.42 Low AS-00109 Porter Cazamias Consumer Shanghai Shanghai China North Asia Apr
+OR0110 27-08-2015 06-09-2015 2015 10 First Class Auto & Accessories Car Speakers $211.00 3 $70.33 0.05 $99.40 $4.97 $9.90 $9.94 $74.59 Low NE-00110 Cobb Kane Consumer León León Nicaragua Central Aug
+OR0111 10-06-2015 14-06-2015 2015 4 First Class Auto & Accessories Car Body Covers $117.00 5 $23.40 0.05 $7.80 $0.39 $0.80 $0.78 $5.83 Low ER-00111 Russo Webber Consumer Tallahassee Florida United States South Jun
+OR0112 10-02-2015 12-02-2015 2015 2 First Class Auto & Accessories Car & Bike Care $118.00 3 $39.33 0.01 $34.50 $1.73 $3.40 $3.45 $25.93 Low LL-00112 Hancock O'Brill Consumer Port Elizabeth Eastern Cape South Africa Africa Feb
+OR0113 04-11-2015 14-11-2015 2015 10 First Class Auto & Accessories Tyre $250.00 5 $50.00 0.01 $157.50 $7.88 $15.80 $15.75 $118.08 Low SH-00113 Bond Overcash Consumer Newark Ohio United States East Nov
+OR0114 22-11-2015 01-12-2015 2015 9 First Class Auto & Accessories Bike Tyres $72.00 2 $36.00 0.03 $36.00 $1.80 $3.60 $3.60 $27.00 Low PO-00114 Graham Cacioppo Home Office Cambridge England United Kingdom North Nov
+OR0115 15-10-2015 20-10-2015 2015 5 First Class Auto & Accessories Car Mat $54.00 4 $13.50 0.02 $13.50 $0.68 $1.40 $1.35 $10.08 Low ZO-00115 Fox D'Ascenzo Home Office Munster Lower Saxony Germany Central Oct
+OR0116 07-06-2015 14-06-2015 2015 7 First Class Auto & Accessories Car Seat Covers $114.00 5 $22.80 0.05 $5.50 $0.28 $0.60 $0.55 $4.08 Low CK-00116 Barnett Garverick Home Office Gyula Bekes Hungary EMEA Jun
+OR0117 25-12-2015 26-12-2015 2015 1 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 4 $57.75 0.02 $132.50 $6.63 $13.30 $13.25 $99.33 Low EN-00117 Gardner Craven Consumer Managua Managua Nicaragua Central Dec
+OR0118 16-08-2015 17-08-2015 2015 1 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.04 $54.40 $2.72 $5.40 $5.44 $40.84 Low RI-00118 Ayala Molinari Consumer Turin Piedmont Italy South Aug
+OR0119 09-07-2015 17-07-2015 2015 8 First Class Auto & Accessories Car Speakers $211.00 3 $70.33 0.04 $105.70 $5.29 $10.60 $10.57 $79.25 Low IS-00119 Parrish Preis Home Office Barcelona Catalonia Spain South Jul
+OR0120 08-06-2015 15-06-2015 2015 7 First Class Auto & Accessories Car Body Covers $117.00 5 $23.40 0.01 $31.20 $1.56 $3.10 $3.12 $23.42 High LL-00120 Dominguez Norvell Consumer Clermont-Ferrand Auvergne France Central Jun
+OR0121 15-11-2015 23-11-2015 2015 8 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.03 $20.30 $1.02 $2.00 $2.03 $15.26 Low OS-00121 Browning Staavos Corporate San Francisco California United States West Nov
+OR0122 26-06-2015 01-07-2015 2015 5 First Class Auto & Accessories Tyre $250.00 4 $62.50 0.05 $120.00 $6.00 $12.00 $12.00 $90.00 Low LL-00122 Gibson Carroll Consumer Bayeux Paraíba Brazil South Jun
+OR0123 13-10-2015 19-10-2015 2015 6 First Class Auto & Accessories Bike Tyres $72.00 4 $18.00 0.03 $18.00 $0.90 $1.80 $1.80 $13.50 Low IS-00123 Saunders Kotsonis Consumer Kuala Lumpur Kuala Lumpur Malaysia Southeast Asia Oct
+OR0124 27-01-2015 03-02-2015 2015 7 First Class Auto & Accessories Car Mat $54.00 1 $54.00 0.01 $54.00 $2.70 $5.40 $5.40 $40.50 High ST-00124 Bullock Prost Consumer Perth Western Australia Australia Oceania Jan
+OR0125 31-08-2015 07-09-2015 2015 7 First Class Auto & Accessories Car Seat Covers $114.00 3 $38.00 0.02 $27.20 $1.36 $2.70 $2.72 $20.42 Low RK-00125 Holmes Clark Corporate Darwin Northern Territory Australia Oceania Aug
+OR0126 22-07-2015 01-08-2015 2015 10 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 1 $231.00 0.01 $148.70 $7.44 $14.90 $14.87 $111.50 High ER-00126 Murphy Bierner Consumer Bayeux Lower Normandy France Central Jul
+OR0127 08-03-2015 17-03-2015 2015 9 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.01 $58.60 $2.93 $5.90 $5.86 $43.91 Low RR-00127 Peters Derr Corporate Lannion Brittany France Central Mar
+OR0128 05-09-2015 06-09-2015 2015 1 First Class Auto & Accessories Car Speakers $211.00 3 $70.33 0.01 $124.70 $6.24 $12.50 $12.47 $93.50 High WE-00128 Gillespie Zewe Consumer Los Angeles California United States West Sep
+OR0129 22-10-2015 25-10-2015 2015 3 First Class Auto & Accessories Car Body Covers $117.00 5 $23.40 0.04 $13.60 $0.68 $1.40 $1.36 $10.16 Low AM-00129 Watkins Cunningham Corporate Iserlohn North Rhine-Westphalia Germany Central Oct
+OR0130 18-03-2015 21-03-2015 2015 3 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.02 $26.20 $1.31 $2.60 $2.62 $19.67 Low ON-00130 James Bolton Consumer Kalemie Katanga Democratic Republic of the Congo Africa Mar
+OR0131 30-10-2015 01-11-2015 2015 2 First Class Auto & Accessories Tyre $250.00 3 $83.33 0.02 $155.00 $7.75 $15.50 $15.50 $116.25 Low EN-00131 Hebert Wooten Home Office Marseille Provence-Alpes-Côte d'Azur France Central Oct
+OR0132 12-08-2015 15-08-2015 2015 3 First Class Auto & Accessories Bike Tyres $72.00 5 $14.40 0.05 $14.40 $0.72 $1.40 $1.44 $10.84 High DT-00132 Rojas Schmidt Home Office Los Angeles California United States West Aug
+OR0133 13-10-2015 20-10-2015 2015 7 First Class Auto & Accessories Car Mat $54.00 1 $54.00 0.02 $54.00 $2.70 $5.40 $5.40 $40.50 High ON-00133 Bean Thompson Corporate Soyapango San Salvador El Salvador Central Oct
+OR0134 13-08-2015 22-08-2015 2015 9 First Class Auto & Accessories Car Seat Covers $114.00 5 $22.80 0.05 $5.50 $0.28 $0.60 $0.55 $4.08 High EN-00134 Schneider Hansen Corporate Ivry-sur-Seine Ile-de-France France Central Aug
+OR0135 22-10-2015 26-10-2015 2015 4 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 2 $115.50 0.02 $141.80 $7.09 $14.20 $14.18 $106.33 Low TT-00135 Martinez Arnett Corporate Kanpur Uttar Pradesh India Central Asia Oct
+OR0136 30-07-2015 05-08-2015 2015 6 First Class Auto & Accessories Car Media Players $140.00 1 $140.00 0.03 $55.80 $2.79 $5.60 $5.58 $41.83 High UE-00136 Snow Pardue Consumer Cartagena Bolívar Colombia South Jul
+OR0137 14-10-2015 24-10-2015 2015 10 First Class Auto & Accessories Car Speakers $211.00 4 $52.75 0.02 $114.10 $5.71 $11.40 $11.41 $85.59 High LS-00137 Bradley Daniels Corporate Cancún Quintana Roo Mexico North Oct
+OR0138 10-10-2015 16-10-2015 2015 6 First Class Auto & Accessories Car Body Covers $117.00 5 $23.40 0.04 $13.60 $0.68 $1.40 $1.36 $10.16 Low KY-00138 Cantu Zandusky Corporate Harbin Heilongjiang China North Asia Oct
+OR0139 08-01-2015 09-01-2015 2015 1 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.04 $14.40 $0.72 $1.40 $1.44 $10.84 Low TZ-00139 Maxwell Katz Consumer Kumasi Ashanti Ghana Africa Jan
+OR0140 26-06-2015 29-06-2015 2015 3 First Class Auto & Accessories Tyre $250.00 4 $62.50 0.05 $120.00 $6.00 $12.00 $12.00 $90.00 Low ER-00140 Mills Collister Consumer Delhi Delhi India Central Asia Jun
+OR0141 11-11-2015 13-11-2015 2015 2 First Class Auto & Accessories Bike Tyres $72.00 5 $14.40 0.05 $14.40 $0.72 $1.40 $1.44 $10.84 Low CH-00141 Johnston Ducich Consumer London England United Kingdom North Nov
+OR0142 01-11-2015 03-11-2015 2015 2 First Class Auto & Accessories Car Mat $54.00 5 $10.80 0.03 $10.80 $0.54 $1.10 $1.08 $8.08 Low LE-00142 Owens Carlisle Consumer Khorramabad Lorestan Iran EMEA Nov
+OR0143 23-03-2015 26-03-2015 2015 3 First Class Auto & Accessories Car Seat Covers $114.00 4 $28.50 0.05 $11.20 $0.56 $1.10 $1.12 $8.42 Low EY-00143 Robertson Coakley Consumer Barletta Apulia Italy South Mar
+OR0144 04-10-2015 08-10-2015 2015 4 First Class Auto & Accessories Car Pillow & Neck Rest $231.00 1 $231.00 0.05 $139.50 $6.98 $13.90 $13.95 $104.68 Low NI-00144 Arnold Crestani Consumer Kharkiv Kharkiv Ukraine EMEA Oct
+OR0145 19-12-2015 26-12-2015 2015 7 First Class Auto & Accessories Car Media Players $140.00 5 $28.00 0.01 $53.00 $2.65 $5.30 $5.30 $39.75 Low CK-00145 Nicholson Murdock Consumer London England United Kingdom North Dec
+OR0146 27-09-2015 02-10-2015 2015 5 First Class Auto & Accessories Car Speakers $211.00 5 $42.20 0.04 $88.80 $4.44 $8.90 $8.88 $66.58 Low NG-00146 Shaw Chung Consumer Managua Managua Nicaragua Central Sep
+OR0147 23-08-2015 29-08-2015 2015 6 First Class Auto & Accessories Car Body Covers $117.00 1 $117.00 0.02 $34.70 $1.74 $3.50 $3.47 $26.00 Low OE-00147 Francis Jarboe Consumer Bundaberg Queensland Australia Oceania Aug
+OR0148 18-12-2015 21-12-2015 2015 3 First Class Auto & Accessories Car & Bike Care $118.00 5 $23.60 0.05 $8.50 $0.43 $0.90 $0.85 $6.33 High RE-00148 Jefferson Macintyre Consumer Valparaíso de Goiás Goiás Brazil South Dec
+OR0149 07-02-2015 12-02-2015 2015 5 First Class Auto & Accessories Tyre $250.00 1 $250.00 0.04 $160.00 $8.00 $16.00 $16.00 $120.00 Low LE-00149 Jordan Carlisle Corporate Kermanshah Kermanshah Iran EMEA Feb
+
+
+
+
+
